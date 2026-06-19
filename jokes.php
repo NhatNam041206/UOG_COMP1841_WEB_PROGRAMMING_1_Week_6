@@ -1,7 +1,7 @@
 <?php
 try{
     include 'includes/DatabaseConnection.php';
-    $sql = 'SELECT id, joketext, jokedate, jokeimage FROM joke';
+    $sql = 'SELECT joke.id, joketext, jokedate, jokeimage, name, email FROM joke inner join author on joke.authorid = author.id order by jokedate desc';
     $jokes = $pdo->query($sql);
     $title = 'Joke List';
 

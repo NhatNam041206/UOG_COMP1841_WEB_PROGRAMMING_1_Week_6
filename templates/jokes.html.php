@@ -20,6 +20,7 @@
                 <th>Joke Title</th>
                 <th>Joke Date</th>
                 <th>Image</th>
+                <th>Author</th>
                 <th>Action</th>
                 </tr>
             </thead>
@@ -39,6 +40,11 @@
 
                     <td width="150px">
                         <img height="100px" src="images/<?= htmlspecialchars($joke['jokeimage'], ENT_QUOTES, 'UTF-8') ?>" />
+                    </td>
+                    
+                    <td width="50px">
+                        by <a href="mailto:<?= htmlspecialchars($joke['email'], ENT_QUOTES, 'UTF-8') ?>">
+                            <?= htmlspecialchars($joke['name'], ENT_QUOTES, 'UTF-8') ?>
                     </td>
 
                     <td width="50px">
