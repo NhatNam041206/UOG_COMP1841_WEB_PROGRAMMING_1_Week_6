@@ -54,10 +54,17 @@
                     </td>
 
                     <td width="50px">
-                        <form action="deletejoke.php" method="post">
-                            <input type="hidden" name="id" value="<?= htmlspecialchars($joke['id'], ENT_QUOTES, 'UTF-8')?>">
-                            <input type="submit" value="Delete">
-                        </form>
+                        <div class="actions">
+                            <form action="editjoke.php">
+                                <input type="hidden" name="id" value="<?= htmlspecialchars($joke['id'], ENT_QUOTES, 'UTF-8')?>">
+                                <input type="submit" value="Edit">
+                            </form>
+
+                            <form action="deletejoke.php" method="post">
+                                <input type="hidden" name="id" value="<?= htmlspecialchars($joke['id'], ENT_QUOTES, 'UTF-8')?>">
+                                <input type="submit" value="Delete">
+                            </form>
+                        </div>
                     </td>
 
                 </tr>
