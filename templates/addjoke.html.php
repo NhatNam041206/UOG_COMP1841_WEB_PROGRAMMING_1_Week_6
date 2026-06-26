@@ -20,7 +20,7 @@
         <div class="form-field">
             <label for="authorid">Choose an author:</label>
             <select name="authorid" id="authorid" required>
-                <option value="">Select an author</option>
+                <option value="" disabled selected hidden>Select an author</option>
                 <?php foreach ($authors as $author): ?>
                     <option value="<?= htmlspecialchars($author['id'], ENT_QUOTES, 'UTF-8') ?>">
                         <?= htmlspecialchars($author['name'], ENT_QUOTES, 'UTF-8') ?>
@@ -32,7 +32,7 @@
         <div class="form-field">
             <label for="categoryid">Choose a category:</label>
             <select name="categoryid" id="categoryid" required>
-                <option value="">Select a category</option>
+                <option value="" disabled selected hidden>Select a category</option>
                 <?php foreach ($categories as $category): ?>
                     <option value="<?= htmlspecialchars($category['id'], ENT_QUOTES, 'UTF-8') ?>">
                         <?= htmlspecialchars($category['name'], ENT_QUOTES, 'UTF-8') ?>
