@@ -13,16 +13,16 @@
         <p><?= $error ?></p>
 
     <?php else: ?>
-
+        <p><?= $totalJokes?> jokes have been submitted to the Internet Joke Database.</p>
         <table border="2px">
             <thead>
                 <tr>
-                <th>Joke Title</th>
-                <th>Joke Date</th>
-                <th>Image</th>
-                <th>Category</th>
-                <th>Author</th>
-                <th>Action</th>
+                    <th>Joke Title</th>
+                    <th>Joke Date</th>
+                    <th>Image</th>
+                    <th>Category</th>
+                    <th>Author</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             
